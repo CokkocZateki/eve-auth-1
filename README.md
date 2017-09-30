@@ -3,7 +3,12 @@ EVE-Auth
 </h1>
 
 <p align="center">
-
+<a href="https://packagist.org/packages/aGrimes94/eve-auth"><img src="https://poser.pugx.org/agrimes94/eve-auth/v/stable?format=flat-square" alt="Latest Stable Version"></a>
+<a href="https://styleci.io/repos/105326896"><img src="https://styleci.io/repos/105326896/shield?branch=master" alt="StyleCI Status"></a>
+<a href="https://travis-ci.org/aGrimes94/eve-auth"><img src="https://img.shields.io/travis/aGrimes94/eve-auth.svg?style=flat-square" alt="Travis Build Status"></a>
+<a href="https://www.codacy.com/"><img src="https://img.shields.io/codacy/grade/b80c9dd435044db7ad028bcf7e46e6af.svg?style=flat-square" alt="Codacy Grade"></a>
+<a href="https://codeclimate.com/github/aGrimes94/eve-auth"><img src="https://img.shields.io/codeclimate/github/aGrimes94/eve-auth.svg?style=flat-square" alt="Codeclimate Rating"></a>
+<a href="https://codeclimate.com/github/aGrimes94/eve-auth/coverage"><img src="https://img.shields.io/codeclimate/coverage/github/aGrimes94/eve-auth.svg?style=flat-square" alt="Codeclimate Coverage"></a>
 </p>
 
 EVE-Auth is a simple package to allow you to quickly request and verify tokens received during the OAuth2 lifecycle when interacting with the EVE Online SSO.
