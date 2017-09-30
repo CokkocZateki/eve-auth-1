@@ -1,6 +1,6 @@
 <?php
 /**
- * VerifyResponse
+ * VerifyResponse.
  *
  * @category Class
  *
@@ -14,7 +14,7 @@
 namespace AGrimes94\EVEAuth\Response;
 
 /**
- * VerifyResponse
+ * VerifyResponse.
  *
  * @category Class
  *

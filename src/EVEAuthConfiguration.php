@@ -1,6 +1,6 @@
 <?php
 /**
- * EVEAuthConfiguration
+ * EVEAuthConfiguration.
  *
  * @category Class
  *
@@ -14,7 +14,7 @@
 namespace AGrimes94\EVEAuth;
 
 /**
- * EVEAuthConfiguration
+ * EVEAuthConfiguration.
  *
  * @category Class
  *

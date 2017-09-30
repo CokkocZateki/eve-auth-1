@@ -1,6 +1,6 @@
 <?php
 /**
- * TokenResponse
+ * TokenResponse.
  *
  * @category Class
  *
@@ -14,7 +14,7 @@
 namespace AGrimes94\EVEAuth\Response;
 
 /**
- * TokenResponse
+ * TokenResponse.
  *
  * @category Class
  *

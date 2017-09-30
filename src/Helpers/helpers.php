@@ -1,6 +1,6 @@
 <?php
 /**
- * Helpers
+ * Helpers.
  *
  * @category function
  *
@@ -10,17 +10,16 @@
  *
  * @license MIT
  */
-
 use GuzzleHttp\Psr7\Uri;
 
 // TODO There must be a better way of doing this
 if (!function_exists('eveAuthorizeURIConstruct')) {
     /**
-     * Construct a authorize uri
+     * Construct a authorize uri.
      *
      * @param string $redirect_uri
      * @param string $client_id
-     * @param array $scopes
+     * @param array  $scopes
      *
      * @return string
      */
@@ -31,7 +30,6 @@ if (!function_exists('eveAuthorizeURIConstruct')) {
         $scope_counter = 0;
 
         foreach ($scopes as $scope) {
-
             if ($scope_counter >= 1) {
                 $scope_string .= ' ' . $scope;
             } else {
@@ -43,17 +41,16 @@ if (!function_exists('eveAuthorizeURIConstruct')) {
 
         $query_params = [
             'response_type' => 'code',
-            'redirect_uri' => $redirect_uri,
-            'client_id' => $client_id,
-            'scope' => $scope_string,
+            'redirect_uri'  => $redirect_uri,
+            'client_id'     => $client_id,
+            'scope'         => $scope_string,
         ];
 
-
-        return (string)Uri::fromParts([
+        return (string) Uri::fromParts([
             'scheme' => 'https',
-            'host' => 'login.eveonline.com',
-            'path' => rtrim('/oauth/authorize/', '/'),
-            'query' => \GuzzleHttp\Psr7\build_query($query_params),
+            'host'   => 'login.eveonline.com',
+            'path'   => rtrim('/oauth/authorize/', '/'),
+            'query'  => \GuzzleHttp\Psr7\build_query($query_params),
         ]);
     }
 }

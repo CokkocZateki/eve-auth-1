@@ -1,6 +1,6 @@
 <?php
 /**
- * EVEAuth
+ * EVEAuth.
  *
  * @category Class
  *
@@ -19,7 +19,7 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;
 
 /**
- * EVEAuth
+ * EVEAuth.
  *
  * @category Class
  *
@@ -67,6 +67,7 @@ class EVEAuth
 
     /**
      * @param string $secret_key
+     *
      * @return \AGrimes94\EVEAuth\EVEAuth
      */
     public function setSecretKey(string $secret_key): self
@@ -78,6 +79,7 @@ class EVEAuth
 
     /**
      * @param string $cert_verification
+     *
      * @return \AGrimes94\EVEAuth\EVEAuth
      */
     public function setCertVerification(string $cert_verification): self
@@ -104,10 +106,10 @@ class EVEAuth
     {
         $request = $this->client->request('POST', $this->eve_auth_configuration->getTokenUri(),
             [
-                'headers' => ['Authorization' => ' Basic ' . $this->eve_auth_configuration->getAuthHeader()],
+                'headers'     => ['Authorization' => ' Basic ' . $this->eve_auth_configuration->getAuthHeader()],
                 'form_params' => [
                     'grant_type' => 'authorization_code',
-                    'code' => $_REQUEST['code'], // TODO Must be a better way of doing this
+                    'code'       => $_REQUEST['code'], // TODO Must be a better way of doing this
                 ],
                 'verify' => $this->eve_auth_configuration->isCertVerification(),
             ]
@@ -143,7 +145,7 @@ class EVEAuth
         $request = $this->client->request('GET', $this->eve_auth_configuration->getVerificationTokenUri(),
             [
                 'headers' => ['Authorization' => 'Bearer ' . $access_token],
-                'verify' => $this->eve_auth_configuration->isCertVerification(),
+                'verify'  => $this->eve_auth_configuration->isCertVerification(),
             ]
         );
 
@@ -178,9 +180,9 @@ class EVEAuth
     {
         $request = $this->client->request('POST', $this->eve_auth_configuration->getTokenUri(),
             [
-                'headers' => ['Authorization' => 'Basic ' . $this->eve_auth_configuration->getAuthHeader()],
+                'headers'     => ['Authorization' => 'Basic ' . $this->eve_auth_configuration->getAuthHeader()],
                 'form_params' => [
-                    'grant_type' => 'refresh_token',
+                    'grant_type'    => 'refresh_token',
                     'refresh_token' => $refresh_token,
                 ],
                 'verify' => $this->eve_auth_configuration->isCertVerification(),
