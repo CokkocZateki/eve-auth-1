@@ -1,0 +1,44 @@
+{
+    "name": "agrimes94/eve-auth",
+    "description": "EVE-Auth is a simple package to allow you to quickly request and verify tokens received during the OAuth2 lifecycle when interacting with the EVE Online SSO",
+    "keywords": [
+        "auth",
+        "authentication",
+        "eve",
+        "eve online",
+        "eveonline"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/aGrimes94/eve-auth/issues",
+        "source": "https://github.com/aGrimes94/eve-auth/"
+    },
+    "authors": [
+        {
+            "name": "Anthony Grimes",
+            "email": "contact@anthonygrimes.co.uk",
+            "homepage": "https://anthonygrimes.co.uk/"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.3",
+        "codeclimate/php-test-reporter": "^0.4.4"
+    },
+    "autoload": {
+        "files": [
+            "src/Helpers/helpers.php"
+        ],
+        "psr-4": {
+            "AGrimes94\\EVEAuth\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AGrimes94\\EVEAuth\\Tests\\": "tests/"
+        }
+    }
+}
