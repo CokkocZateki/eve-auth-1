@@ -44,7 +44,7 @@ If the answer to either of those two questions are "yes", then you're probably d
 When filing an issue, make sure to answer these five questions:
 
 1. What version of EVE-Auth are you using?
-1. What operating system and processor architecture are you using?
+1. What operating system, processor architecture and PHP version are you using?
 1. What did you do?
 1. What did you expect to see?
 1. What did you see instead?
