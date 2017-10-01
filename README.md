@@ -45,7 +45,7 @@ $eve_auth_configuration = new AGrimes94\EVEAuth\EVEAuthConfiguration();
 $eve_auth_configuration->setClientId('YOUR_CLIENT_ID');
 $eve_auth_configuration->setSecretKey('YOUR_SECRECT_KEY');
 
-$eve_auth_client = AGrimes94\EVEAuth\EVEAuth($eve_auth_configuration);
+$eve_auth_client = new AGrimes94\EVEAuth\EVEAuth($eve_auth_configuration);
 ```
 
 Below are examples of requesting an access token, verifying the token and getting a refresh token using the in-line setter methods:
