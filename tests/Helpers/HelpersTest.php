@@ -47,4 +47,16 @@ class HelpersTest extends TestCase
         $this->assertEquals('https://login.eveonline.com/oauth/authorize?response_type=code&redirect_uri=REDIRECT_URI&client_id=CLIENT_ID&scope=esi-calendar.respond_calendar_events.v1%20esi-calendar.read_calendar_events.v1',
             $uri_multiple_scope);
     }
+
+    public function testURIConstructorWithState()
+    {
+        $scope = [
+            'esi-calendar.respond_calendar_events.v1',
+        ];
+
+        $uri = eveAuthorizeURIConstruct('REDIRECT_URI', 'CLIENT_ID', $scope, 'STATE');
+
+        $this->assertEquals('https://login.eveonline.com/oauth/authorize?response_type=code&redirect_uri=REDIRECT_URI&client_id=CLIENT_ID&scope=esi-calendar.respond_calendar_events.v1&state=STATE',
+            $uri);
+    }
 }

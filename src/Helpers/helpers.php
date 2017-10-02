@@ -15,15 +15,16 @@ use GuzzleHttp\Psr7\Uri;
 // TODO There must be a better way of doing this
 if (!function_exists('eveAuthorizeURIConstruct')) {
     /**
-     * Construct a authorize uri.
+     * Construct a string authorize uri.
      *
      * @param string $redirect_uri
      * @param string $client_id
      * @param array  $scopes
+     * @param string $state
      *
      * @return string
      */
-    function eveAuthorizeURIConstruct(string $redirect_uri = '', $client_id = '', array $scopes = [])
+    function eveAuthorizeURIConstruct(string $redirect_uri = '', string $client_id = '', array $scopes = [], string $state = '')
     {
         $scope_string = '';
 
@@ -45,6 +46,10 @@ if (!function_exists('eveAuthorizeURIConstruct')) {
             'client_id'     => $client_id,
             'scope'         => $scope_string,
         ];
+
+        if ($state !== '') {
+            $query_params['state'] = $state;
+        }
 
         return (string) Uri::fromParts([
             'scheme' => 'https',
