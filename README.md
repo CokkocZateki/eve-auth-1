@@ -102,7 +102,7 @@ $request->getRefreshToken();
 
 EVE-Auth provides a helper method for constructing your authorize uri's:
 
-e.g. *https://login.eveonline.com/oauth/authorize?response_type=code&redirect_uri=YOUR_REDIRECT_URI&client_id=YOUR_CLIENT_ID&scope=YOUR_SCOPES*
+e.g. *https://login.eveonline.com/oauth/authorize?response_type=code&redirect_uri=YOUR_REDIRECT_URI&client_id=YOUR_CLIENT_ID&scope=YOUR_SCOPES&state=STATE*
 
 This helper can be called anywhere without creating an EVE-Auth instance:
 
@@ -110,9 +110,9 @@ This helper can be called anywhere without creating an EVE-Auth instance:
 $scope = [
         'esi-calendar.respond_calendar_events.v1',
         'esi-calendar.read_calendar_events.v1',
-    ]
+    ];
     
-$uri = eveAuthorizeURIConstruct('YOUR_REDIRECT_URI', 'YOUR_CLIENT_ID', $scope);
+$uri = eveAuthorizeURIConstruct('YOUR_REDIRECT_URI', 'YOUR_CLIENT_ID', $scope, 'STATE');
 ```
 
 ## Contributing
