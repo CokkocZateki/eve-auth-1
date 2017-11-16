@@ -45,7 +45,7 @@ A template has been provided as `ISSUE_TEMPLATE.MD` in the root directory for yo
 
 General questions should be directed to myself at [contact@anthonygrimes.co.uk](mailto:contact@anthonygrimes.co.uk) instead of the issue tracker. I'll respond as quickly as I can.
 
-### How to make a pull request:
+# How to make a pull request:
 
 A template has been provided as `PULL_REQUEST_TEMPLATE.MD` in the root directory for you. This document shall also give you some guidance on you pull request.
 
