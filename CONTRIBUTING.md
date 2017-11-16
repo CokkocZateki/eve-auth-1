@@ -23,7 +23,7 @@ Please, don't use the issue tracker for support questions. If you find a securit
 
 # Your First Contribution
 
-Unsure where to begin contributing to EVE-Auth ? You can start by checking if there are any beginner or help-wanted issues:
+Unsure where to begin contributing to EVE-Auth? You can start by checking if there are any beginner or help-wanted issues:
 
 * Beginner issues - issues which should only require a few lines of code, and a test or two.
 * Help wanted issues - issues which should be a bit more involved than beginner issues.
