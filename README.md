@@ -22,7 +22,7 @@ PHP 7.1 and later
 ### Composer
 
 ``` sh
-composer require agrimes94/eve-auth
+$ composer require agrimes94/eve-auth
 ```
 
 ## Getting Started
