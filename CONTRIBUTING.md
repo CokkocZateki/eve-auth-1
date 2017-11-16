@@ -28,7 +28,7 @@ Unsure where to begin contributing to EVE-Auth ? You can start by checking if th
 * Beginner issues - issues which should only require a few lines of code, and a test or two.
 * Help wanted issues - issues which should be a bit more involved than beginner issues.
 
-# How to report a bug
+# How to report a bug/issue
 
 If you find a security vulnerability, do NOT open an issue. Email [contact@anthonygrimes.co.uk](mailto:contact@anthonygrimes.co.uk) instead. All security vulnerabilities will be promptly addressed.
 
@@ -39,23 +39,21 @@ In order to determine whether you are dealing with a security issue, ask yoursel
 
 If the answer to either of those two questions are "yes", then you're probably dealing with a security issue. Note that even if you answer "no" to both questions, you may still be dealing with a security issue, so if you're unsure, just email myself at [contact@anthonygrimes.co.uk](mailto:contact@anthonygrimes.co.uk).
 
-### How to file a bug report
+### How to file a bug/issue report
 
-When filing an issue, make sure to answer these five questions:
-
-1. What version of EVE-Auth are you using?
-1. What operating system, processor architecture and PHP version are you using?
-1. What did you do?
-1. What did you expect to see?
-1. What did you see instead?
+A template has been provided as `ISSUE_TEMPLATE.MD` in the root directory for you. This document shall also give some guidance on your bug/issue reports.
 
 General questions should be directed to myself at [contact@anthonygrimes.co.uk](mailto:contact@anthonygrimes.co.uk) instead of the issue tracker. I'll respond as quickly as I can.
 
+### How to  make a pull request:
+
+A template has been provided as `PULL_REQUEST_TEMPLATE.MD` in the root directory for you. This document shall also give you some guidance on you pull request.
+
 # How to suggest a feature or enhancement
 
-EVE-Auth is designed foremost to be simple for the user and readable for the developer. Please ensure that if you are suggesting a new feature or enchancement that you keep these two simple values in mind.
+EVE-Auth is designed foremost to be simple for the user and readable for the developer. Please ensure that if you are suggesting a new feature or enhancement that you keep these two simple values in mind.
 
-All features are welcome and can be assigned the label 'feature request' in the issue tracker.
+All features are welcomed and can be assigned the label 'feature request' in the issue tracker.
 
 # Code review process
 
